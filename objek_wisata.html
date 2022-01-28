@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- JQuery Link -->
+  <script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="assets/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+
+    <title>Website Mantar</title>
+
+  <script type="text/javascript">
+$(function(){
+$("#dialogku").dialog({
+autoOpen:false,
+show:'blind',
+hide:'explode'
+
+});
+$('#dibuka').click(function(){
+$('#dialogku').dialog('open');
+return false;
+});
+});
+</script>
+</head>
+ <body>
+
+ <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+      <img src="image/mountain.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><h2>Mantar</h2></a>
+          <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item">
+              <a class="nav-link"  href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="objek_wisata.html">Objek Wisata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="sarana.html">Sarana Akomodasi</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="wawasan.html">Wawasan</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Account</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#example" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </body>
+
+    <!-- navbar -->
+  <!-- jumbotron -->
+  <section class="jumbotron">
+      <h1 class="display-4">Objek Wisata</h1>
+      <hr class="my-5" />
+
+      <p class="lead">
+        Desa Mantar adalah salah satu Destinasi unggulan Kabupaten Sumbawa Barat. hingga saat ini, 
+        Desa Mantar sudah dikunjungi berbagai kalangan, dan tidak heran jika Desa Mantar dapat dikatakan saat ini sudah mendunia. 
+        Para wisatawan yang berdatangan ke kabupaten Sumbawa Barat dengan maksud melaksanakan pekerjaan atau pun yang datang khusus 
+        ke Kabupten Sumbawa Barat, tidak lengkap rasanya jika belum datang berkunjung ke Desa mantar.
+      </p>
+
+      <div class="tombol">
+        <button type="button" class="btn btn-success btn-lg" id="dibuka">Jelajahi</button>
+        <button type="button" class="btn btn-warning btn-lg">Video</button>
+      </div>
+    </section>
+    
+    <!-- button -->
+
+    <!-- tutupjumbotron -->
+
+    <!-- carausel -->
+
+    <div class="cara">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/1.jpg" class="d-block w-100" alt="..." />
+
+          </div>
+          <div class="carousel-item">
+            <img src="image/2.jpg " class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--endcarausel-->
+
+    <div id="dialogku">
+    <h3>Video Bukit Mantar</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_hChQOHBuCM" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+    <!--content-->
+
+        <div class="container-fluid " style="background-color: #F3F4F5;">
+        <p id="objekwisata" class="display-4" style="text-align:center;
+        background-color: #F3F4F5;"><b>Objek Wisata</b></p>
+        <div class="row">
+        <div class="col-md-6">
+        <h2>Spot Sunrise</h2>
+        <p class="lead">Mantar disebut juga dengan “Negeri di atas Awan”. Hal ini bukanlah tanpa alasan. 
+        Karena dari bukit ini, pengunjung dapat menyaksikan indahnya kepulan awan menutupi pemandangan. 
+        Yang membuat siapapun akan terpesona memandangnya. Di hari cerah, pengunjung akan menyaksikan 
+        pemandangan bukit, sawah, hingga laut dari sini.</p>
+
+        <p>Namun, saat fajar atau setelah turun hujan, pemandangan berganti. Berganti dengan pemandangan awan yang 
+        menutupi hampir seluruh area di bawah bukit. Yang membuatnya seolah berada di atas awan, sehingga muncullah 
+        nama Negeri di atas Awan.</p>
+
+        <a href="#" class="btn btn-primary">Selanjutnya</a><br>
+        <h3>Follow Me On The Website</h3>
+        <a href="#" class="btn btn-primary">Facebook</a>
+        <a href="#" class="btn btn-success">Twitter</a>
+        <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+
+        <div class="col-md-6">
+        <figure>
+        <img src="image/mantar2.jpg" width="100%" class="img-fluid">
+
+        <figcaption style="text-align:center;"><b>Gambar Spot Sunrise Bukit Mantar</b></figcaption>
+        </figure>
+        </div>
+        </div>
+        <hr>
+
+        <div class="row">
+        <div class="col-md-6">
+        <figure>
+
+        <img src="image/paralayang.jpg" width="100%" class="img-fluid">
+
+        <figcaption style="text-align:center;"><b>Gambar Paralayang Internasional</b></figcaption>
+
+        </figure>
+        </div>
+        <div class="col-md-6">
+        <h2>Paralayang Internasional</h2>
+        <p class="lead">Di belakang Bukit Mantar terdapat jurang yang dalam. Di bawahnya langsung area persawahan luas. 
+        Namun, tempat ini justru disukai oleh para pegiat paralayang. Yang setiap pagi dan sore unjuk kebolehan 
+        di bukit ini.</p>
+
+        <p>Bukit ini menjadi tempat yang tepat untuk melaksanakan kegiatan paralayang. Mulai dari ketinggiannya, 
+        pemandangan di bawahnya, hingga kesejukan udaranya. Oleh karena itu,..</p>
+
+        <a href="#" class="btn btn-primary">Selanjutnya</a><br>
+        <h3>Follow Me On The Website</h3>
+        <a href="#" class="btn btn-primary">Facebook</a>
+        <a href="#" class="btn btn-success">Twitter</a>
+        <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+        </div>
+        <hr>
+         <div class="row">
+         <div class="col-md-6">
+        <h2>Spot Foto</h2>
+        <p class="lead">Terdapat banyak spot yang dapat dijadikan lokasi berfoto, suasana alam di bawah bukit, merupakan latar favorit para pengunjung untuk melakukan foto-foto.</p>
+
+        <p>Beberapa spot yang sering dijadikan tempat selfie seperti Kata-kata seperti “Salam dari Mantar” hingga “Mantan tak se Cantik Mantar”, menjadi spot foto.</p>
+
+        <a href="#" class="btn btn-primary">Selanjutnya</a><br>
+        <h3>Follow Me On The Website</h3>
+        <a href="#" class="btn btn-primary">Facebook</a>
+        <a href="#" class="btn btn-success">Twitter</a>
+        <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+        <div class="col-md-6">
+        <figure>
+        <img src="image/spot.jpg" width="100%" class="img-fluid">
+        <figcaption style="text-align:center;"><b>Gambar Spot Foto</b></figcaption>
+        </figure>
+        </div>
+        </div>
+        <hr>
+
+        <div class="row">
+        <div class="col-md-6">
+        <figure>
+
+        <img src="image/galeri4.jpg" width="100%" class="img-fluid">
+
+        <figcaption style="text-align:center;"><b>Gambar Lautan Awan</b></figcaption>
+
+        </figure>
+        </div>
+        <div class="col-md-6">
+        <h2>Lautan Awan</h2>
+        <p class="lead">Desa yang berada di ketinggian 585 meter di atas pemukaan laut itu menawarkan pemandangan luar biasa bagaikan di atas awan.</p>
+
+        <p>Ya, desa itu berjuluk desa di atas awan. Sebab, saat berada di atas bukit Mantar di pagi hari, pengunjung bisa merasakan sensasi seperti di atas awan dan melihat pemandangan pulau-pulau kecil di bawahnya.,..</p>
+
+        <a href="#" class="btn btn-primary">Selanjutnya</a><br>
+        <h3>Follow Me On The Website</h3>
+        <a href="#" class="btn btn-primary">Facebook</a>
+        <a href="#" class="btn btn-success">Twitter</a>
+        <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+        </div>
+
+        <hr>       
+        <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+        <li class="page-item">
+        <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <a class="page-link" href="#">Next</a>
+
+        </ul>
+        </li>
+        </nav>
+        </div>
+<!--endcontent-->
+
+<!--footer-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="pink" fill-opacity="1" d="M0,224L40,208C80,192,160,160,240,144C320,128,400,128,480,154.7C560,181,640,235,720,261.3C800,288,880,288,960,277.3C1040,267,1120,245,1200,229.3C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+</svg>
+    <footer class="text-bslck text-center" style="background-color:pink;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4">
+<p><b>Copyright @2021 Rizka Ramada Andini Yanti</b></p>
+</div>
+<div class="col-md-4">
+<ul style="text-align:left;" class="list-unstyled">
+<li ><a href="index.html"></a> Beranda</li>
+<li ><a href="objek-wisata.html"></a> Objek Wisata</li>
+<li ><a href="sarana.html"></a> Sarana dan Akomodasi</li>
+<li ><a href="#wawasan"></a> Wawasan</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!--endfooter-->
+    <!-- bootstrap -->
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</html>
